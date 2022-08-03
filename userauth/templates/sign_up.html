@@ -5,13 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+<<<<<<< HEAD
     {% load static %}
     <link rel="stylesheet" href="{% static 'sign_up.css' %}">
+||||||| b4f0e7e
+    <link rel="stylesheet" href="sign_up.css">
+=======
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'sign_up.css'%}">
+>>>>>>> 85b93c6d051b8c19e01b0b2dc93af5126232d456
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
 </head>
 <body>
     <div id="left">
-        <img src="Logo_White.png" alt="White Logo" id="logo">
+        {% load static %}
+        <img src="{% static '/Logo/Logo_White.png' %}" alt="White Logo" id="logo">
         <p id="text">A few clicks away from you generating your professional policies.</p>
     </div>
     <div id="right">
@@ -63,6 +71,7 @@
         </div>
         <p id="login">Already have an account? <a href=""> Log in</a></p>
     </div>
-    <script src="signup.js"></script>
+    {% load static %}
+    <script src="{% static 'signup.js' %}"></script>
 </body>
 </html>

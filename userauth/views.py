@@ -18,7 +18,17 @@ from django.contrib import messages
 
 from django.http import HttpResponse
 
+
 from . import forms
+
+
+def testView(request):
+    return render(request, "editprofile.html")
+def logintest(request):
+    return render(request, "loginform.html")
+#Omolola's code below -- tope please fix.
+def policyTest(request):
+    return render(request, "policy.html")
 
 
 
@@ -69,7 +79,6 @@ def reset_password_view(request, pk):
         form = forms.ResetPassword(request.POST)
 
         if form.is_valid():
-            # TODO: Implement logic for updating new password in the database
             pass
     return render(request, 'reset_password.html', {'form': form})
 

@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {% load static %}
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<<<<<<< HEAD
 
     {% load static %}
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="{% static 'style.css' %}" />
+||||||| b4f0e7e
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+>>>>>>> 85b93c6d051b8c19e01b0b2dc93af5126232d456
     <title>Terms Creator Landing Page</title>
   </head>
   <body>
@@ -72,13 +83,13 @@
         <!-- image -->
         <div class="md:ml-22 w-96 relative">
           <img
-            src="Pictures/Hero section image.png"
+            src="{% static 'Pictures/Hero section image.png' %}"
             alt="image of a guy writing"
           />
         </div>
       </div>
       <div class="absolute right-0 top-0 h-full" >
-        <img class="h-full " src="pictures/hero section blue.png" alt="">
+        <img class="h-full " src="{% static 'pictures/hero section blue.png' %}" alt="">
       </div>
     </section>
 
@@ -103,7 +114,7 @@
             <a href="#">
               <img
                 class="w-32 ml-20 p-5"
-                src="icons/Handshake icon.png"
+                src="{% static 'icons/Handshake icon.png' %}"
                 alt=""
               />
             </a>
@@ -133,7 +144,7 @@
             <a href="#">
               <img
                 class="w-32 ml-20 p-5"
-                src="icons/Check shield icon.png"
+                src="{% static 'icons/Check shield icon.png' %}"
                 alt=""
               />
             </a>
@@ -161,7 +172,7 @@
           <!-- card 3 -->
           <div class="max-w-sm bg-white rounded-lg mb-7 p-12">
             <a href="#">
-              <img class="w-32 ml-20 p-5" src="icons/Check icon.png" alt="" />
+              <img class="w-32 ml-20 p-5" src="{% static 'icons/Check icon.png' %}" alt="" />
             </a>
             <div class="p-5">
               <a href="#">
@@ -206,7 +217,7 @@
             <div class="flex flex-row mb-16 md:my-5 md:mb-12 md:ml-8">
               <img
                 class="w-16 mr-3"
-                src="icons/simple-calendar-svgrepo-com 1.png"
+                src="{% static  'icons/simple-calendar-svgrepo-com 1.png' %}"
                 alt=""
               />
               <p class="text-[#000] text-2xl">
@@ -216,7 +227,7 @@
             <div class="flex flex-row mb-16">
               <img
                 class="w-16 mr-3"
-                src="icons/event-date-and-time-symbol-svgrepo-com 1.png"
+                src="{% static  'icons/event-date-and-time-symbol-svgrepo-com 1.png' %}"
                 alt=""
               />
               <p class="text-[#000] text-2xl">Always up-to-date</p>
@@ -230,7 +241,7 @@
             <div class="flex flex-row mb-16 md:my-5 md:mb-12 md:ml-8">
               <img
                 class="w-16 mr-3"
-                src="icons/cost-effective-productive-svgrepo-com 1.png"
+                src="{% static 'icons/cost-effective-productive-svgrepo-com 1.png' %}"
                 alt=""
               />
               <p class="text-[#000] text-2xl">
@@ -241,7 +252,7 @@
             <div class="flex flex-row mb-16">
               <img
                 class="w-16 mr-3"
-                src="icons/time-svgrepo-com 1.png"
+                src="{% static 'icons/time-svgrepo-com 1.png' %}"
                 alt=""
               />
               <p class="text-[#000] text-2xl">Takes less time</p>
@@ -255,7 +266,7 @@
             <div class="flex flex-row mb-16 md:my-5 md:mb-12 md:ml-8">
               <img
                 class="w-16 mr-3"
-                src="icons/download-svgrepo-com 1.png"
+                src="{% static 'icons/download-svgrepo-com 1.png' %}"
                 alt=""
               />
               <p class="text-[#000] text-2xl">Download in<br />any format</p>
@@ -263,7 +274,7 @@
             <div class="flex flex-row mb-16">
               <img
                 class="w-16 mr-3"
-                src="icons/insert-template-svgrepo-com 1.png"
+                src="{% static 'icons/insert-template-svgrepo-com 1.png' %}"
                 alt=""
               />
               <p class="text-[#000] text-2xl">Customizable<br />Templates</p>
@@ -294,7 +305,7 @@
             >
               <img
                 class="w-16 ml-16"
-                src="Pictures/User count number.png"
+                src="{% static 'Pictures/User count number.png' %}"
                 alt=""
               />
               <p class="text-[#000] text-2xl text-left ml-12">Users</p>
@@ -310,7 +321,7 @@
             >
               <img
                 class="w-16 ml-16"
-                src="Pictures/Policy count 2.png"
+                src="{% static 'Pictures/Policy count 2.png' %}"
                 alt=""
               />
               <p class="text-[#000] text-2xl text-left">
@@ -328,7 +339,7 @@
             >
               <img
                 class="w-16 ml-16"
-                src="Pictures/T_C Month count.png"
+                src="{% static 'Pictures/T_C Month count.png' %}"
                 alt=""
               />
               <p class="text-[#000] text-2xl text-left">
@@ -402,7 +413,7 @@
           <div class="md:mb-96">
             <div class="w-96 md:w-96 md:mb-96">
               <img
-                src="Pictures/Hand writing.png"
+                src="{% static 'Pictures/Hand writing.png' %}"
                 alt="image of a guy writing"
               />
             </div>
@@ -428,7 +439,7 @@
           <!-- card 1 -->
           <div class="max-w-sm bg-white rounded-lg mb-7 p-12">
             <a href="#">
-              <img class="w-48 ml-16 p-5" src="Pictures/User 1.png" alt="" />
+              <img class="w-48 ml-16 p-5" src="{% static 'Pictures/User 1.png' %}" alt="" />
             </a>
             <div class="p-5 ">
                 <h5
@@ -449,7 +460,7 @@
           <!-- card 2 -->
           <div class="max-w-sm bg-white rounded-lg mb-7 p-12 md:-mt-14">
             <a href="#">
-              <img class="w-48 ml-16 p-5" src="Pictures/User 2.png" alt="" />
+              <img class="w-48 ml-16 p-5" src="{% 'Pictures/User 2.png' %}" alt="" />
             </a>
             <div class="p-5 ">
                 <h5
@@ -468,7 +479,7 @@
           <!-- card 3 -->
           <div class="max-w-sm bg-white rounded-lg mb-7 p-12">
             <a href="#">
-              <img class="w-48 ml-16 p-5" src="Pictures/User 3.png" alt="" />
+              <img class="w-48 ml-16 p-5" src="{% static 'Pictures/User 3.png' %}" alt="" />
             </a>
             <div class="p-5 ">
                 <h5
@@ -500,13 +511,13 @@
         </h2>
 
         <a
-              href=""
+              href="#"
               class="mt-5 max-w-sm p-2 mb-2 text-center mx-auto px-8 pt-2 baseline bg-[#154ED5] text-[#fff] rounded-md md:text-center md:w-80 md:mt-11 md:mb-6 md:py-2 md:mx-auto md:px-16"
               >Start Free Trial Now!</a
             >
 
             <a
-              href=""
+              href="#"
               class="mt-2 max-w-sm p-2 mb-4 text-center px-8 pt-2 mx-auto baseline border-2 border-white border-[#fff] text-[#fff] rounded-md md:text-center md:w-80 md:mt-2 md:mb-20 md:py-2 md:mx-auto md:px-16"
               >Start Free Trial Now!</a
             >
@@ -524,7 +535,7 @@
         >
           <!-- Logo -->
           <div class="">
-            <img src="Logo/Logo Blue Yellow.png" class="h-14" alt="" />
+            <img src="{% static 'Logo/Logo Blue Yellow.png' %}" class="h-14" alt="" />
           </div>
         </div>
         <!-- List Container -->
