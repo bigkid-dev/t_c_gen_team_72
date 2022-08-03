@@ -50,6 +50,7 @@ def new_decides():
 def newer_decides():
     return month_choice2
 
+
 class Question(models.Model):
     question_text = models.CharField(max_length=200, choices=decides(), default='JANUARY')
     pub_date = models.DateTimeField('publication_date')

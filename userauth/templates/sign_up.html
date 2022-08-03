@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="sign_up.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'sign_up.css' %}">
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
 </head>
 <body>
@@ -15,7 +16,9 @@
     </div>
     <div id="right">
         <div id="right-div">
-            <form action="">
+
+            <form action="" method="post">
+            {% csrf_token %}
                 <section id="register">
                     <p>Register</p>
                     <p>Let's get you started with TermsCreator</p>
@@ -28,7 +31,7 @@
                         </p>
                         <p>
                             <label for="password">Password</label>
-                            <input required type="password" name="password" id="password" placeholder="minimum of 8 character" minlength="8">
+                            <input required type="password" name="password1" id="password" placeholder="minimum of 8 character" minlength="8">
                         </p>
                     </div>
                     <div>
@@ -38,13 +41,13 @@
                         </p>
                         <p>
                             <label for="password">Confirm Password</label>
-                            <input required type="password" name="confirm_password" id="confirm_password" placeholder="minimum of 8 characters" minlength="8">
+                            <input required type="password" name="password2" id="confirm_password" placeholder="minimum of 8 characters" minlength="8">
                         </p>
                     </div>
                     <div>
                         <p>
                             <label for="company">Company</label>
-                            <input required type="text" name="company" id="company" placeholder="My Great Company">
+                            <input required type="text" name="username" id="company" placeholder="My Great Company">
                         </p>
                         <p>
                             <label for="business">Business Type</label>
