@@ -83,22 +83,6 @@ def reset_password_view(request, pk):
     return render(request, 'reset_password.html', {'form': form})
 
 
-def login(request):
-    if request.method == "POST":
-        email = request.POST['email']
-        password = request.POST['password']
-
-        user = authenticate(email=email, password=password)
-        if user is not None:
-            login(request, user)
-            return redirect('/list')
-        else:
-            raise ValidationError('Pls Sign Up')
-
-
-    return render(request, template_name='loginform.html')
-
-
 def signup(request):
     if request.method == "POST":
         username = request.POST['username']
